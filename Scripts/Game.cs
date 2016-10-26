@@ -9,6 +9,16 @@ public class Game{
 
     public void Start (){
         Health.RunPowerUp();
+        /*
+        After prompt the game for a name we:
+        Enter a cave
+        find Health.
+        Meet a dragon. (need an enemy class)
+        Pick weapon.
+        Battle dragon. (Battle class)
+        If we win: get Health and ammo.
+        If dragon wins: loose Health.
+        */
     }
 
     //Game power ups
