@@ -84,5 +84,6 @@
 -r:"C:\Users\10782819\.nuget\packages\System.Xml.XDocument\4.0.11\ref\netstandard1.3\System.Xml.XDocument.dll"
 "C:\Users\10782819\Documents\Cluff\CsharpStuff\Program.cs"
 "C:\Users\10782819\Documents\Cluff\CsharpStuff\Scripts\Game.cs"
+"C:\Users\10782819\Documents\Cluff\CsharpStuff\Scripts\GameScripts\GamePlay\LevelBase.cs"
 "C:\Users\10782819\Documents\Cluff\CsharpStuff\Scripts\GameScripts\PowerUps\PowerUpBase.cs"
 "C:\Users\10782819\Documents\Cluff\CsharpStuff\Scripts\GameScripts\Weapons\WeaponBase.cs"
