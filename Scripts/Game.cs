@@ -24,25 +24,33 @@ public class Game{
         Console.WriteLine("Game Over.");
     }
 
-    public string gameState;
+    
 
     private void Play(){
-        Console.WriteLine("Play commands: play, end, help");
-        gameState = Console.ReadLine();
+        Console.WriteLine("Play commands: Play, End, Help");
+        //gameState = Console.ReadLine();
         
-        if(gameState == "end") {
-            Console.WriteLine("Game Over");
-            Environment.Exit(0);
-        }
+        switch (GameStateMachine.currentGameState)
+        {
+           
+            case GameStateMachine.GameStates.End:
+                Console.WriteLine("Game Over.");
+                Environment.Exit(0);
+                break;
 
-        if(gameState == "help") {
-            Console.WriteLine("What do you need help for? If you can't play this game, you have issues.");
-            Play();
-        }
+            case GameStateMachine.GameStates.Help:
+                Console.WriteLine("What do you need help for? If you can't play this game, you have issues.");
+                Play();
+                break;
 
-        if(gameState != "help" && gameState != "play" && gameState != "end") {
-            Console.WriteLine(gameState + " is not a vaild command.");
-            Play();
+            case GameStateMachine.GameStates.Play:
+                break;
+
+
+            default:
+                Console.WriteLine("That is not a vaild command.");
+                Play();
+            break;
         }
 
         Random randomNum = new Random();
